@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }
+       body{
+        background-color: black;
+        color: rgb(147, 143, 140);
+       }
+        header{
+            position: relative;
+            background: radial-gradient(circle,rgba(110, 103, 103, 0.3),rgba(0, 0, 0, 0.89)),url(./image/IN-en-20250120-TRIFECTA-perspective_860a95da-c386-446e-af83-fef8ddd80803_large.jpg) ;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            
+          
+        }
+        .log img{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 60px;
+        }
+        nav{
+            position: absolute;
+            top: 20%;
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 55%;
+            border-radius: 10px;
+            color: white;
+            padding:5% 5%;
+            display: flex;
+            flex-direction:column; 
+            gap: 15px;
+        }
+        nav h1{
+            font-size: xx-large;
+        }
+        .email{
+             background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid rgb(63, 60, 60);
+           
+            color: rgb(150, 149, 149);
+        }
+        .email input{
+            border: none;
+            outline: none;
+            padding: 5px;
+            background: none;
+            color: rgb(214, 209, 209);
+            font-size: 16px;
+        }
+        .email label{
+             font-size: 18px;
+        }
+        .signin{
+            padding: 10px;
+            border-radius: 5px;
+            background-color: red;border: none;
+            color: white;
+            font-size: 18px;
+        }
+        .signCode{
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgba(102, 99, 99,.5);
+            border: none;
+            color: white;
+            font-size: 18px;
+        }
+        .or{
+            text-align: center;
+            font-size: 18px;
+        }
+        .forget{
+            text-align: center;
+            font-size: 18px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(50, 50, 227);
+        }
+        .remember{
+            font-size: 18px;
+            
+        }
+        .remember input{
+            width: 30px;
+            height: 20px;
+           
+        }
+        footer{
+            
+            margin: 25% 5%;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+       li{
+            
+            list-style: none;
+            margin: 20px;
+            text-decoration: underline;
+        }
+
+      select {
+        background-color: rgba(26, 26, 26, 0.829);
+        border-radius: 5px;
+        height: 35px;
+        padding: 0px 15px;
+        color: #faf5f5;
+      }
+        @media (max-width:400px) {
+            nav{
+                width: 90%;
+                
+            }
+            footer{
+            
+            margin-top: 60%;
+            }
+        }
+         @media (min-width:400px) {
+            nav{
+                width: 70%;
+                
+            }
+            footer{
+            
+            margin-top: 50%;
+            }
+        }
+         @media (min-width:720px) {
+            nav{
+                width: 50%;
+                
+            }
+            footer{
+            
+            margin-top: 30%;
+            }
+        }
+         @media (min-width:1240px) {
+            nav{
+                width: 35%;
+                
+            }
+            footer{
+            
+            margin-top: 15%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+       <div class="log">
+        <a href="./index.html"><img src="./image/Netflix_Logo_PMS.png" alt=""></a>
+       </div>
+       <nav>
+
+        <h1>Sign In</h1>
+        <div class="email">
+            <label for="email">Email or mobile number</label>
+            <input type="email" name="email">
+        </div>
+        <div class="email">
+             <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <button class="signin">
+            Sign In
+        </button>
+        <div class="or">OR</div>
+        <button class="signCode">
+            Use a sign-in code
+        </button>
+        <div class="forget">
+            Forgot password?
+        </div>
+        <div class="remember">
+            <input type="checkbox">
+            Remember me
+        </div>
+        <div style="color: rgb(153, 155, 157);">
+            New to Netflix? <span  style="color: rgb(250, 250, 251);">Sign up now.</span>
+        </div>
+        <div  style="color: rgb(153, 155, 157);">
+            This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#">Learn more.</a>
+        </div>
+
+
+       </nav>
+
+    </header>
+
+   <footer>
+   <li style="text-decoration: none;">Question? Cal 000-800-919-1743 <span</span></li>
+   <ul>
+    <li>FAQ</li>
+    <li>Help Center</li>
+    <li>Terms of Use</li>
+    <li>Privacy</li>
+    <li>Cookie Preferences</li>
+    <li>Corporate Information</li>
+   </ul>
+   <select name="" id="">
+            <option value="">English</option>
+            <option value="">Hindi</option>
+          </select>
+   </footer>
+</body>
+</html>

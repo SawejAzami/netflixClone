@@ -1,0 +1,432 @@
+ 
+   
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family:  sans-serif;
+      }
+      header {
+        height: 100vh;
+        width: 100vw;
+        background: radial-gradient(
+            circle,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 1)
+          ),
+          url(./image/IN-en-20250120-TRIFECTA-perspective_860a95da-c386-446e-af83-fef8ddd80803_large.jpg);
+
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* nav bar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 50px;
+      }
+      @media screen and (max-width: 480px) {
+        nav {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0px 30px;
+        }
+        .log img {
+          height: 50px;
+        }
+      }
+
+      /* Netflix Log */
+      .log img {
+        height: 80px;
+        
+      }
+      /* .log::after{
+        left: -120px;
+        top: -14px;
+        background: none;
+        content: "Garibo Ka Rakhwala";
+       position: relative;
+       color: #fff;
+       font-size: 8px;
+      }  */
+      .button select {
+        background-color: rgba(26, 26, 26, 0.829);
+        border-radius: 5px;
+        height: 35px;
+        padding: 0px 15px;
+        color: #faf5f5;
+      }
+
+      .button button {
+        color: #fff;
+        height: 35px;
+        padding: 0px 15px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        background-color: #f90a0a;
+      }
+      .button button:hover {
+        background-color: #c40505;
+        transition: 1s ease-in-out;
+      }
+/* heroSection */
+      .heroSection{
+
+        height: 88vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+      .heroSection .heroSectionPart{
+     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        
+      }
+      .heroSection .heroSectionPart p{
+        margin: 10px 0px;
+        width: 80%;
+       
+      }
+      .heroSection .heroSectionPart h1{
+       width: 80%;
+        font-size: 35px;
+      }
+     
+      .inputContainer{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 75%;
+
+      }
+      .inputContainer div{
+        
+        position: relative;
+        padding: 2px;
+        margin-bottom:5px ;
+        width: 300px;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid #fff;
+      }
+      .inputContainer input{
+        position:absolute;
+        bottom: 1px;
+        border: none;
+        outline: none;
+        width: 97%;
+        background:none;
+        padding: 3px 5px;
+        font-size: 20px;
+        color: #fff;
+        
+        
+      }
+      input:-webkit-autofill {
+        color: #fff;
+    background-color: transparent !important;
+    transition: 5000s ease-in-out 0s; 
+}
+      .inputContainer label{
+        color: #fefcfc;
+        position: absolute;
+        bottom: 12px;
+        left: 5px;
+        z-index: 1;
+        font-size: 20px;
+        transition:  1s ease;
+      }
+      /* .inputContainer label:hover{
+        transition: all 0.8s ease ;
+        font-size: 16px;
+        bottom: 25px;
+        left: 25px;
+      } */
+      
+      .inputContainer button{
+        background-color: #f90a0a;
+        border: none;
+        padding: 10px 10px;
+        font-size: 20px;
+        border-radius: 5px;
+        height: 50px;
+        color: #fff;
+      }
+      
+      .movieCardContainer{
+        width: 100vw;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+      }
+      .Trending{
+        color: #f9f7f7;
+        width: 100%;
+        left: 0px;
+        top: -30px;
+        padding-left: 12%;
+        font-size: 25px;
+        background-color: #000000;
+      }
+    #movieCard{
+      position: relative;
+      width: 80vw;
+      height: 220px;
+        overflow: hidden;
+       gap: 20px; 
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+        
+    }
+     #movieCard .card{
+      width: 140px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+     }
+     #movieCard .card img{
+        /* margin: 0px 12px; */
+        border-radius: 20px;
+        width: 120px;
+        height: 180px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s;
+      }
+      
+       #movieCard .card img:hover{
+         width: 140px;
+        height: 200px;
+         transition: all 1s;
+       }
+   #leftSlide{
+    background-color: #242323cf;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    width: 25px;
+    height: 120px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #leftSlide h1{
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+   }
+
+    #rightSlide{
+    background-color: #242323cf;
+    position: absolute;
+    top:30px;
+    right: 0px;
+    width: 25px;
+    height: 120px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #rightSlide h1{
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+   }
+   .reasons{
+    color: #fff;
+    padding:15px 10%;
+    font-size: 25px;
+    background-color: #000000;
+   }
+   .reasonCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000000;
+   }
+
+   .reasonCard .card{
+    background-image:linear-gradient(rgb(21, 29, 83),rgb(31, 64, 75));
+    margin: 10px;
+    width: 80%;
+    height: 160px;
+    color: #d9d5d5;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+   }
+   .reasonCard .card h3{
+    color: #fff;
+    margin-bottom: 5px;
+   }
+   .reasonCard .card .icon{
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    filter: drop-shadow(2px 2px 20px  rgb(0, 255, 110));
+   }
+   #ask{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+
+   }
+   .question{
+    width: 80vw;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px;
+   }
+   .title{
+    padding: 0px 20px;
+    background-color: #322f2f;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+   }
+   .title div{
+    font-size: 40px;
+   }
+   .title:hover{
+    background-color: #454343;
+   }
+   .question .paragraph{
+    background-color: #322f2f;
+    font-size: 20px;
+    padding: 10px 30px;
+   }
+      
+   .readyToWatch{
+    padding: 10px 0px;
+    background-color: #000000;
+    width: 100vw;
+    color: #fffbfb;
+   }
+   .readyToWatch div{
+    width: 65%;
+   }
+   li{
+    list-style: none;
+    margin: 8px 0px;
+    cursor: pointer;
+    text-decoration: underline;
+   }
+footer{
+  background-color: #000000;
+  color: #fff;
+  padding: 70px 8%;
+}
+footer ul{
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+ @media screen and (min-width:900px){
+  footer ul{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+          .readyToWatch div{
+    width: 40%;
+   }
+        #question{
+          width: 70vw;
+        }
+        .reasonCard .card{
+          width: 40%;
+        }
+        .heroSection .heroSectionPart{
+          width: 80%;
+        }
+        .heroSection .heroSectionPart p{
+        
+        width: 50%;
+       
+      }
+      .heroSection .heroSectionPart h1{
+       width: 65%;
+        font-size: 45px;
+      }
+      }
+
+
+       @media screen and (min-width:600px){
+        .heroSection .heroSectionPart{
+          width: 70%;
+        }
+       
+       
+      }
+
+      @media screen and (min-width:1280px){
+        .reasonCard .card{
+          width: 20%;
+        }
+   
+      }
+
+
+
+      @media screen and (max-width:600px) {
+          footer ul{
+           grid-template-columns:  1fr;
+          }
+       
+        .inputContainer button{
+          padding: 10px 30px;
+        }
+        .inputContainer{
+            width:80% ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .inputContainer div{
+          width: 100%;
+        }
+        .readyToWatch{
+          width: 100%;
+          padding: 10px 30px;
+        }
+        .readyToWatch div{
+          width: 90%;
+        }
+              .question .paragraph{
+   
+    font-size: 14px;
+    
+   }
+
+      }
+    
